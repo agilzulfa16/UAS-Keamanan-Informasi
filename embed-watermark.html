@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Watermark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-image"></i> Embed Watermark</h1>
+        <div class="file-input-group">
+            <div class="file-input">
+                <input type="file" id="cover-image" accept="image/*">
+                <label for="cover-image" class="btn-file"><i class="fas fa-upload"></i> Pilih Gambar Cover</label>
+            </div>
+            <div class="file-input">
+                <input type="file" id="watermark-image" accept="image/*">
+                <label for="watermark-image" class="btn-file"><i class="fas fa-upload"></i> Pilih Gambar Watermark</label>
+            </div>
+        </div>
+        <button id="embed-watermark" class="btn"><i class="fas fa-check"></i> Embed Watermark</button>
+        <div class="canvas-container">
+            <canvas id="result-canvas"></canvas>
+        </div>
+        <a id="download-link" download="watermarked-image.jpg" style="display: none;" class="btn"><i class="fas fa-download"></i> Download Image</a>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Kembali</a>
+    </div>
+
+    <script src="embed-watermark.js"></script>
+</body>
+</html>

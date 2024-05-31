@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekstrak Watermark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-eraser"></i> Ekstrak Watermark</h1>
+        <div class="file-input-group">
+            <div class="file-input">
+                <input type="file" id="watermarked-image" accept="image/*">
+                <label for="watermarked-image" class="btn-file"><i class="fas fa-upload"></i> Pilih Gambar dengan Watermark</label>
+            </div>
+        </div>
+        <button id="extract-watermark" class="btn"><i class="fas fa-check"></i> Ekstrak Watermark</button>
+        <div class="canvas-container">
+            <canvas id="watermark-canvas"></canvas>
+        </div>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Kembali</a>
+    </div>
+
+    <script src="extract-watermark.js"></script>
+</body>
+</html>

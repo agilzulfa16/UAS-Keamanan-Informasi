@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QIM Watermarking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="">
+    <header>
+        <nav class="flex items-center  text-white px-16  justify-between h-20 bg-red-500 fixed w-screen top-0">
+            <div class="text-xl font-bold" id="page1"> QIM COPYRIGHT WATERMAKING</div>
+            <div class="text-md">
+                <a href="#" class="px-4" id="home">Home</a>
+                <a  href="#" class="px-4" id="wm">Watermarking</a>
+                <a href="#" id="about" class="px-4">About</a>
+                <a href="#" id="us" class="px-4">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="px-28 h-screen flex">
+        <div class="container flex items-center justify-between">
+            <div class="content w-1/2">
+                <h1 class="text-4xl font-bold pb-4">QIM COPYRIGHT WATERMAKING</h1>
+                <p>
+                    Selamat datang di website kami, dimana anda bisa menambahkan invisible watermark pada gambar anda
+                    untuk menjaga hak cipta.
+                    Kami ingin membantu anda menjaga Hak Kekayaan Intelektual yang anda miliki, agar terjaga dan tidak
+                    dipersalahgunakan oleh pihak-pihak yang tiak bertanggung jawab.
+                    Metode yang digunakan dalam Watermarking pada website ini adalah Quantization Index Modulation
+                    (QIM).
+
+                </p>
+                <a id="discover-more-btn" class="cta" href="#">Discover More</a>
+            </div>
+            <div class="logo">
+                <img src="logo.png" width="400px" alt="Logo" />
+            </div>
+        </div>
+    </section>
+
+    <section class="page_2 h-screen px-16 text-justify text-black flex  flex-col justify-center">
+        <h2 class="text-2xl font-bold py-4 ">Bagaimana Cara kerja QIM Watermarking?</h2>
+
+        <div class="text-xl">
+            <!-- <img src="" alt="ujian_snbt" width="550px" /> -->
+            
+                
+                <p>Metode QIM diperkenalkan oleh Brian Chen dan Gregory W. Wornell pada tahun 1999. <strong>Quantization Index Modulation</strong> adalah suatu skema penyisipan watermark dengan tahapan:</p>
+        
+                    1. Memodulasi watermark dalam suatu indeks atau himpunan indeks. Hasilnya kemudian disebut dengan <strong>quantizer</strong>. <br>
+                    2. Mengkuantisasi sinyal host pada frekuensi tertentu dengan <strong>quantizer</strong> yang sesuai, sesuai dengan nilai watermark yang akan disisipkan pada sinyal tersebut. <br><br>
+                
+                <p>Misalkan sebuah watermark <em>w</em> yang disusun oleh sekumpulan karakter <em>n</em>, hendak disisipkan ke sebuah sinyal <em>y</em> yang disusun oleh <em>c<sub>i</sub></em>, menggunakan metode QIM. Maka sebelumnya harus disediakan <strong>quantizer</strong> sejumlah <em>n</em>, yang kemudian setiap <strong>quantizer</strong> akan diindeks sesuai dengan karakter watermark yang ada. Jika <em>n</em> hendak disisipkan pada sinyal yang diposisikan <em>c<sub>i</sub></em>, maka nilai <em>c<sub>i</sub></em> akan dikuantisasi nilainya ke nilai yang dirujuk oleh <strong>quantizer</strong> ke-i.</p>
+​
+ 
+            
+
+
+        </div>
+
+
+    </section>
+
+    <section class="page_3 h-screen flex items-center">
+    <div class="container flex flex-col items-center">
+        <h1 class="text-4xl pb-10">Silahkan pilih menu Watermarking</h1>
+        <div class="btn-group">
+            <a href="embed-watermark.html" class="btn"><i class="fas fa-image"></i> Embed Watermark</a>
+            <a href="extract-watermark.html" class="btn"><i class="fas fa-eraser"></i> Ekstrak Watermark</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-10 page_4" id="services">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">About Developers</h2>
+        <div class="flex justify-center gap-20">
+            <div class="bg-white rounded-lg shadow-md w-96 overflow-hidden ">
+                <img src="agil.jpg" alt="agil"
+                    class="w-full h-96">
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">AGIL ZULFA</h3>
+                    <p class="text-gray-700 text-base">227006053
+                    
+                    </p>
+
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md w-96 overflow-hidden ">
+                <img src="rian.jpg" alt="agil"
+                    class="w-full h-96">
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">RIAN NURDIANA</h3>
+                    <p class="text-gray-700 text-base">227006055
+                    
+                    </p>
+
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>       
+
+
+
+
+
+    <script>
+
+        const discoverMoreBtn = document.getElementById("discover-more-btn");
+        const about = document.getElementById("about");
+        const wm = document.getElementById("wm");
+        const us = document.getElementById("us");
+
+
+        discoverMoreBtn.addEventListener("click", function () {
+
+            document.querySelector(".page_2").scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+
+        about.addEventListener("click", function () {
+
+            document.querySelector(".page_2").scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+
+        wm.addEventListener("click", function () {
+
+            document.querySelector(".page_3").scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+        us.addEventListener("click", function () {
+
+            document.querySelector(".page_4").scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+    </script>
+</body>
+
+</html>
